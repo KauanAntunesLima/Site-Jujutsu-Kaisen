@@ -19,6 +19,8 @@ ul, ol, li{
 }
 
 body{
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     background-color: black;
     padding: 64px 120px ;
@@ -65,4 +67,45 @@ nav ul a:hover{
     background-color: var(--primary-color);
     color: black;
     box-shadow: 0px 0px 12px 4px var(--primary-color);
+}
+
+main{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+    flex-grow: 1;
+    font-family: "Kaushan Script", cursive;
+    color: white;
+    align-items: center;
+    
+}
+
+.texto-container p:first-child{
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 75%;
+    
+}
+.texto-container p:last-child{
+     font-size: 80px;
+    font-weight: 400;
+}
+.texto-container h2{
+    font-weight: 400;
+    color: var(--primary-color);
+    text-indent: 790px;
+}
+.action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 200px;
+    background-color: var(--secundary-color);
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    box-shadow: 0px 0px 12px 4px var(--primary-color);
+    border-radius: 8px;
 }
