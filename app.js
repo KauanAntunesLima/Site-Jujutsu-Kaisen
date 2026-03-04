@@ -3,4 +3,9 @@
 const main = document.querySelector('main')
 const video = document.querySelector('video')
 
-main.onclick = () => video.muted = !video.muted
+main.addEventListener('click', (e) => {
+
+    if(e.target.tagName === 'A') return
+
+    video.muted = !video.muted
+})
